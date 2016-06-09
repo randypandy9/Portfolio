@@ -1,0 +1,14 @@
+SMAP
+newmsg_jsp.java
+JSP
+*S JSP
+*F
++ 0 newmsg.jsp
+newmsg.jsp
+*L
+5,15:45
+20,2:61
+21,6:63
+27:69,3
+28,11:72
+*E

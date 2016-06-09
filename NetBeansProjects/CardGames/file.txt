@@ -1,0 +1,20 @@
+﻿Advanced Player
+Balance before: £200
+Balance after: £210
+PROFIT/LOSS: £10
+Advanced Player
+Balance before: £200
+Balance after: £0
+PROFIT/LOSS: £200
+Advanced Player
+Balance before: £200
+Balance after: £-40
+PROFIT/LOSS: £240
+Advanced Player
+Balance before: £200
+Balance after: £190
+PROFIT/LOSS: £10
+Advanced Player
+Balance before: £200
+Balance after: £180
+PROFIT/LOSS: £20

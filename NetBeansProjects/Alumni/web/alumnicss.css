@@ -1,0 +1,60 @@
+html{
+    background-color: dodgerblue;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+}
+.image
+{
+    width: 1000px;
+    border-radius: 8px;
+    alignment-adjust:central;
+}
+.rightside
+{
+    float: right;
+}
+.gap
+{
+    margin: 5%;
+}
+.center{
+    text-align: left;
+    margin-left: 3%;
+}
+#menu {
+    width:500px;
+    max-width: 500px;
+    height: 35px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 2px 3px;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+#menu li { 
+    display: inline; 
+    padding: 20px; 
+}
+#menu a {
+    text-decoration: none;
+    color: azure;
+    padding: 8px 8px 8px 8px;
+}
+#menu a:hover {
+    color: black;
+    background-color: white;
+}

@@ -1,0 +1,219 @@
+<%-- 
+    Document   : Homepage
+    Created on : Dec 7, 2013, 3:58:56 PM
+    Author     : Bradley
+--%>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Norwich Bike Hire <!--title--> </title>
+        <link rel = "stylesheet" type = "text/css" href = "newcss.css" /> 
+    </head>
+
+    <body>
+        <div id="head">
+            <div id="header">
+                <h1> 
+                    Norwich Bike Hire     
+                    <!--title-->
+                </h1>
+            </div>
+        </div>
+        <div id="navigation-container">
+            <div id="navigation"><!-- NAvigation fo my website -->
+                <ul>
+                    <li><a href="http://localhost:8084/cw/Homepage.jsp">Homepage</a></li>
+                    <li><a href="http://localhost:8084/cw/ServletBook">Booking</a></li>
+                    <li><a href="http://localhost:8084/cw/contactus.html">Contact Us</a></li>
+                    <li><a href="http://localhost:8084/cw/FAQ.html">FAQ</a></li>
+                    <li><a href="http://localhost:8084/cw/bikegallery.jsp">Bike Gallery</a></li>
+                    <li><a href="http://localhost:8084/cw/CycleRoutes.html">Cycle Routes</a></li>
+                    <!--navigation--> 
+                </ul>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content-container2">
+                <div id="content-container3"><!-- content of my web page -->
+                    <div id="content">
+                        <h2>Welcome to Norwich Bike Hire</h2>
+                        <p>Norwich bike hire has a range of bikes that you can rent including mens, womens and childrens bikes all over norwich. Fill out our easy form online and get cycling striaght away!</p>
+                        <p><img src="bikes.gif" width="403" height="232"></p>
+                        <p>Come find us, we are place all over Norwich allowing you to get the best possible experience.</p>
+                        <p><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=norwich+cycle+hire&amp;aq=&amp;sll=52.630354,1.323166&amp;sspn=0.086582,0.218697&amp;ie=UTF8&amp;hq=cycle+hire&amp;hnear=Norwich,+Norfolk,+United+Kingdom&amp;t=m&amp;fll=52.634495,1.297073&amp;fspn=0.021644,0.054674&amp;st=114141868259560747061&amp;rq=1&amp;ev=p&amp;split=1&amp;z=11&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=norwich+cycle+hire&amp;aq=&amp;sll=52.630354,1.323166&amp;sspn=0.086582,0.218697&amp;ie=UTF8&amp;hq=cycle+hire&amp;hnear=Norwich,+Norfolk,+United+Kingdom&amp;t=m&amp;fll=52.634495,1.297073&amp;fspn=0.021644,0.054674&amp;st=114141868259560747061&amp;rq=1&amp;ev=p&amp;split=1&amp;z=11" style="color:#0000FF;text-align:left"></a></small>
+                        </p>
+
+
+                        <script type="text/javascript">
+
+                            /***********************************************
+                             
+                             * Animated Information Bar- by JavaScript Kit (www.javascriptkit.com)
+                             
+                             
+                             ***********************************************/
+
+                            function informationbar() {
+                                this.displayfreq = "always"
+                                this.content = '<a href="javascript:informationbar.close()"><img src="close.gif" style="width: 14px; height: 14px; float: right; border: 0; margin-right: 5px" /></a>'
+                            }
+
+                            informationbar.prototype.setContent = function(data) {
+                                this.content = this.content + data
+                                document.write('<div id="informationbar" style="top: -500px">' + this.content + '</div>')
+                            }
+
+                            informationbar.prototype.animatetoview = function() {
+                                var barinstance = this
+                                if (parseInt(this.barref.style.top) < 0) {
+                                    this.barref.style.top = parseInt(this.barref.style.top) + 5 + "px"
+                                    setTimeout(function() {
+                                        barinstance.animatetoview()
+                                    }, 50)
+                                }
+                                else {
+                                    if (document.all && !window.XMLHttpRequest)
+                                        this.barref.style.setExpression("top", 'document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px" : body.scrollTop+"px"');
+                                    else
+                                        this.barref.style.top = 0;
+                                }
+                            }
+
+                            informationbar.close = function() {
+                                document.getElementById("informationbar").style.display = "none";
+                                if (this.displayfreq == "session")
+                                    ;
+                                document.cookie = "infobarshown=1;path=/";
+                            }
+
+                            informationbar.prototype.setfrequency = function(type) {
+                                this.displayfreq = type;
+                            }
+
+                            informationbar.prototype.initialize = function() {
+                                if ((this.displayfreq == "session") && (document.cookie.indexOf("infobarshown") == -1) || (this.displayfreq == "always"))
+                                {
+                                    this.barref = document.getElementById("informationbar");
+                                    this.barheight = parseInt(this.barref.offsetHeight);
+                                    this.barref.style.top = this.barheight * (-1) + "px";
+                                    this.animatetoview();
+                                }
+                            }
+
+                            window.onunload = function() {
+                                this.barref = null;
+                            }
+
+                        </script>
+
+
+                        <script type="text/javascript">
+<!--Invocation code-->
+
+                            var infobar = new informationbar();
+                            infobar.setContent('Welcome to Norwich Bike Hire, Looking to make a quick book? <a href="ServletBook">Book Now</a>');
+                            infobar.initialize();
+
+                        </script>
+
+                    </div>
+                    <div id="right-side">
+                        <p><img src="logo2.png" alt="some_text" height="250" width="250">				
+
+
+
+
+                            <SCRIPT LANGUAGE="JavaScript">
+
+
+                                var initialsubj = "Hello, check out this awesome site ";
+                                var initialmsg = "Hi:\n You may want to check out this site: " + window.location;
+                                var good;
+                                function checkEmailAddress(field) { //check email validation
+
+                                    var goodEmail = field.value.match(/\b(^(\S+@).+((\.com)|(\.net)|(\.edu)|(\.mil)|(\.gov)|(\.org)|(\.info)|(\.sex)|(\.biz)|(\.aero)|(\.coop)|(\.museum)|(\.name)|(\.pro)|(\..{2,2}))$)\b/gi);
+                                    if (goodEmail) {
+                                        good = true;
+                                    }
+                                    else {
+                                        alert('Please enter a valid address.');
+                                        field.focus();
+                                        field.select();
+                                        good = false;
+                                    }
+                                }
+                                u = window.location;
+                                function mailThisUrl() {
+                                    good = false;
+                                    checkEmailAddress(document.eMailer.email);
+                                    if (good) {
+
+                                        //window.location = "mailto:"+document.eMailer.email.value+"?subject="+initialsubj+"&body="+document.title+" "+u;
+                                        window.location = "mailto:" + document.eMailer.email.value + "?subject=" + initialsubj + "&body=" + initialmsg;
+                                    }
+                                }
+
+                            </script>
+                            <!-- Email Access from JavaSriptkit.com-----> 
+
+                        <form name="eMailer">
+                            Tell a friend:
+                            <input type="text" name="email" size="26" value="     Enter Address Here" onFocus="this.value = ''" onMouseOver="window.status = 'Enter email address here and tell a friend about this site...';
+                                    return true" onMouseOut="window.status = '';
+                                    return true">
+                            <br />
+                            <input type="button" value="Send this Email" onMouseOver="window.status = 'Click to send an email (with this page address) to a friend! Enter email address above...';
+                                    return true" onMouseOut="window.status = '';
+                                    return true" onClick="mailThisUrl();"> <!--weather check-->
+                        </form></p>
+                        <p><a href="http://www.accuweather.com/en/gb/norwich/nr1-1/weather-forecast/329791" class="aw-widget-legal">
+
+                            </a><div id="awcc1386348249638" class="aw-widget-current"  data-locationkey="329791" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1386348249638"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script></p.
+                        ><p><SCRIPT>
+                                function passWord() { //password check
+                                    var testV = 1;
+                                    var pass1 = prompt('Please Enter Your Password', ' ');
+                                    while (testV < 3) {
+                                        if (!pass1)
+                                            history.go(-1);
+                                        if (pass1.toLowerCase() == "password")
+                                        {
+                                            alert('Correct Password');
+                                            window.open('http://localhost:8084/cw/ServletAdmin');
+                                            break;
+                                        }
+                                        testV += 1;
+                                        var pass1 =
+                                                prompt('Access Denied - Password Incorrect, Please Try Again.', 'Password');
+                                    }
+                                    if (pass1.toLowerCase() != "password" & testV == 3)
+                                        history.go(-1);
+                                    return " ";
+                                }
+                            </SCRIPT>
+                        <FORM>
+                            <p>Admin Access:   </p>
+                            <p>
+                                <input name="Button" type="button" onClick="passWord()" value="Enter Admin Area">
+                            </p>
+                        </FORM>
+
+                        <!-- right section of the web page with a hover image as the logo --></div> 
+
+
+                </div>
+            </div>
+        </div>
+        <div id="footer-container">
+            <div id="footer"><!-- footer which appears at the bottom of the web page -->
+                <p> Copyright 2013 Norwich Bike Hire</p>
+            </div>
+        </div>
+
+    </body>
+</html>

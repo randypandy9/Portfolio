@@ -1,0 +1,65 @@
+/* 
+    Document   : checkout
+    Created on : 03-Dec-2013, 10:10:51
+    Author     : ysj13kxu
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.table 
+{
+    text-align: left; background-color: red;
+}
+
+.totals 
+{
+    text-align: right; background-color: chartreuse; float: bottom; float: right;
+}
+            
+.titles
+{
+    background-color: chartreuse; text-align: left;
+}
+
+.details1
+{
+    color: black; float: start;
+}
+
+.buttons
+{
+    float: right
+}
+            
+.html
+{
+    background-color: red;
+}
+           
+.body
+{
+    background-color: white; 
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+            
+.indent 
+{
+    margin-left: 60px
+}
+
+.details2 
+{
+    color: red; float: next;
+}
+
+.cpr 
+{
+    float: right;
+}
+
+.wrong
+{
+    color: red;
+}

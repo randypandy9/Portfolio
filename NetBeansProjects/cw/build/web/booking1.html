@@ -1,0 +1,150 @@
+<!--old design not used in project-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Norwich Bike Hire</title>
+        <link rel = "stylesheet" type = "text/css" href = "newcss.css" /> 
+    </head>
+
+    <body onload="changeList(document.forms['drops'].master)">
+        <div id="head">
+            <div id="header">
+                <h1> 
+                    Norwich Bike Hire  
+                    <!-- title -->
+                </h1>
+            </div>
+        </div>
+        <div id="navigation-container">
+            <div id="navigation"><!-- NAvigation fo my website -->
+                <ul>
+                    <li><a href="http://localhost:8084/cw/Homepage.jsp">Homepage</a></li>
+                    <li><a href="http://localhost:8084/cw/ServletBook">Booking</a></li>
+                    <li><a href="http://localhost:8084/cw/contactus.html">Contact Us</a></li>
+                    <li><a href="http://localhost:8084/cw/FAQ.html">FAQ</a></li>
+                    <li><a href="http://localhost:8084/cw/faces/bikegallery.jsp">Bike Gallery</a></li>
+                    <li><a href="http://localhost:8084/cw/CycleRoutes.html">Cycle Routes</a></li>
+                    <!--navigation-->
+                </ul>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content-container2">
+                <div id="content-container3"><!-- content of my webpage -->
+                    <div id="content">
+                        <h2>Booking Page</h2>
+                        <p>
+                            <!--an attempt to chose bike to book-->
+
+                        <form name="validation" onchange="" onSubmit="return checkbae()" form method="post" action="processform.jsp">
+                            Please input a valid email address:<br />
+                            <input type="text" size=18 name="emailcheck">
+
+                            <p>Please select a bike</p>
+                            <select name= "SelectBike">
+
+                                <option name="Bike0">Please Select</option>
+
+                                <option name="Bike1">Women's Mountain Bike</option>
+
+                                <option name="Bike2">Women's Hybrid</option>
+
+                                <option name="Bike3">Tandem</option>
+
+                                <option name="Bike4">Men's Hybrid</option>
+
+                                <option name="Bike5">Men's Mountain Bike</option>
+
+                                <option name="Bike6">Child's Mountain Bike</option>
+                            </select>
+
+                            <script>
+
+        function Tandom()
+        //check to try and find if tandem is chosen
+        {
+            var sutin = document.getElementById("SelectBike");
+            if (sutin.value == Bike3)
+            {
+                sqlStatement = "SELECT DISTINCT model FROM bike WHERE bike_type='tandem';";
+            }
+        }
+
+
+
+                            </script>
+
+
+
+                            <p>Please select a model</p>
+                            <select onchange="run()" name= "SelectBike" id="SelectBike">
+
+                                <option name="Bike0">Please Select</option>
+
+                                <option name="Bike1">Women's Mountain Bike</option>
+
+                                <option name="Bike2">Women's Hybrid</option>
+
+                                <option name="Bike3">Tandem</option>
+
+                                <option name="Bike4">Men's Hybrid</option>
+
+                                <option name="Bike5">Men's Mountain Bike</option>
+
+                                <option name="Bike6">Child's Mountain Bike</option>
+                            </select>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                        <script language="JavaScript1.2">
+
+        var testresults;
+        function checkemail()
+        {
+            //email validation
+            var str = document.validation.emailcheck.value;
+            var filter = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+            if (filter.test(str))
+                testresults = true;
+            else {
+                alert("Please input a valid email address!");
+                testresults = false;
+            }
+            return (testresults);
+        }
+                        </script>
+                        <script>
+                            function run()
+                            {
+                                var pass = document.getElementById("SelectBike");
+                                out.println(pass);
+                            }
+                        </script>
+                        <script>
+                            function checkbae() {
+                                if (document.layers || document.getElementById || document.all)
+                                    return checkemail();
+                                else
+                                    return true;
+                            }
+                        </script>
+                    </div>
+                    <div id="right-side">
+                        <p><img src="logo2.png" alt="some_text" height="250" width="250">
+
+
+                            <!-- right section of the webpage with a hover image as the logo --></div> 
+
+
+                </div>
+            </div>
+        </div>
+        <div id="footer-container">
+            <div id="footer"><!-- footer which appears at the bottom of the webpage -->
+                <p> Copyright 2013 Norwich Bike Hire</p>
+            </div>
+        </div>
+
+    </body>
+</html>
